@@ -7,7 +7,7 @@ library(qs)
 #### Load data ----
 # WT
 wt_counts <- Read10X(data.dir = "./data/WT/")
-colnames(wt_counts) <- paste("WT", colnames(pbmc.data), sep = "_")
+colnames(wt_counts) <- paste("WT", colnames(wt_counts), sep = "_")
 
 wt_seurat_obj <-
   CreateSeuratObject(
